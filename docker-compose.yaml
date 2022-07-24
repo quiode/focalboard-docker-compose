@@ -1,8 +1,7 @@
-services:
-  app:
-    image: "mattermost/focalboard"
-    ports:
-      - "3011:8000"
-    container_name: focalboard
-    volumes:
-      - "/mnt/raid5/focalboard/data:/data"
+app:
+  image: "mattermost/focalboard"
+  ports:
+    - "3011:8000"
+  container_name: focalboard
+  volumes:
+    - "/mnt/raid5/focalboard/data:/data"
