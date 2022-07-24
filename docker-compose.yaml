@@ -1,4 +1,3 @@
-version: '1.0'
 services:
   app:
     image: "mattermost/focalboard"
@@ -6,4 +5,4 @@ services:
       - "3011:8000"
     container_name: focalboard
     volumes:
-      - "/home/quio/temp/focalboard_data:/data"
+      - "/mnt/raid5/focalboard/data:/data"
