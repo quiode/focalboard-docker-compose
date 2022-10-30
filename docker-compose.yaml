@@ -8,3 +8,10 @@ services:
       - "3011:8000"
     volumes:
       - "/mnt/raid5/focalboard/data:/data"
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: focalboard --include-restarting
